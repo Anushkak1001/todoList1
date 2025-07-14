@@ -28,6 +28,7 @@ struct ContentView: View {
                 } label: {
                     Text("+")
                         .font(.title)
+                        .fontWeight(.bold)
                 }
             }
         }
@@ -40,7 +41,7 @@ struct ContentView: View {
             }
         }
         if showNewTask {
-            NewToDoView()
+            NewToDoView(toDoItem: ToDoItem(title: "", isImportant: false))
         }
     }
 }
